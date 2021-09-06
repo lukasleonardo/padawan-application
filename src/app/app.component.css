@@ -1,0 +1,12 @@
+.container-list{
+    max-width: 1300px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 4px solid rgb(18, 39, 39);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }

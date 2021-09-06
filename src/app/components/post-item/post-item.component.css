@@ -1,0 +1,28 @@
+table {
+    width: 100%;   
+  }
+
+  .mat-column-idPost{
+    width: 32px;
+    padding-right: 22px;
+    text-align: center;
+  }
+
+  .mat-column-userIdPost{
+    width: 32px;
+    padding-left: 22px;
+    text-align: center;
+  }
+
+ 
+  .mat-header-cell {
+    
+    font-size: 20px;
+  }
+  
+
+  .mat-column-bodyPost,.mat-column-titlePost,.mat-column-userIdPost,.mat-column-idPost{
+    font-size: 18;
+  }
+
+ 
