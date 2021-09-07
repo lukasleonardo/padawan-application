@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ComponentsModule } from './components/components.module';
 import { HttpClientModule } from '@angular/common/http';
 import { Routes,RouterModule } from '@angular/router';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 
@@ -46,6 +47,7 @@ const appRoutes:Routes=[
     NoopAnimationsModule,
     ComponentsModule,
     HttpClientModule,
+    InfiniteScrollModule,
     RouterModule.forRoot(appRoutes,{enableTracing: true})
     
   ],

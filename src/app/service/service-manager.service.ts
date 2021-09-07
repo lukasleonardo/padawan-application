@@ -5,13 +5,14 @@ import { Todo } from '../models/Todo';
 import { Post } from '../models/Post';
 import { Album } from '../models/Album';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class ServiceManagerService {
 
   private apiUrl='https://jsonplaceholder.typicode.com/'
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,) { }
 
   getTodos(): Observable<Todo[]> {
     return this.http.get<Todo[]>(`${this.apiUrl}todos`)

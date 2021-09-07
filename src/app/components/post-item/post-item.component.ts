@@ -15,7 +15,14 @@ export class PostItemComponent implements OnInit {
   constructor(private serviceManager:ServiceManagerService) { }
 
   ngOnInit(): void {
+    this.listarPosts();
+  }
+
+  listarPosts(){
     this.serviceManager.getPosts().subscribe((data:Post[])=>this.dataSource.data=data);
   }
+
+  
+
 
 }

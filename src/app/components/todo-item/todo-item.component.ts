@@ -10,6 +10,7 @@ import { ServiceManagerService } from 'src/app/service/service-manager.service';
 
 
 
+
 @Component({
   selector: 'app-todo-item',
   templateUrl: './todo-item.component.html',
@@ -20,11 +21,17 @@ export class TodoItemComponent implements OnInit {
   displayedColumns =['id','title','userId'];
   dataSource = new MatTableDataSource<Todo>();
 
+  
 
   constructor(private serviceManager:ServiceManagerService) {   
    }
 
   ngOnInit(): void {
+    this.listarTodos();
+  }
+
+
+  listarTodos(){
     this.serviceManager.getTodos().subscribe((data:Todo[])=>this.dataSource.data=data);
   }
 

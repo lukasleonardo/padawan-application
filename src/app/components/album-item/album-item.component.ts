@@ -17,6 +17,10 @@ export class AlbumItemComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.listarAlbums();
+  }
+
+  listarAlbums(){
     this.serviceManager.getAlbums().subscribe((data:Album[])=>this.dataSource.data=data);
   }
 

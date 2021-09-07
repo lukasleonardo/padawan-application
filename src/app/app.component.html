@@ -1,6 +1,6 @@
 <div class='container'>
   <app-header></app-header>
-  <div class="container-list">
+  <div class="container-list" infiniteScroll [infiniteScrollDistance]="2" [scrollWindow]="false" [infiniteScrollThrottle]="50"  (scrolled)="onScroll()">
     <router-outlet></router-outlet>
   </div>
  
